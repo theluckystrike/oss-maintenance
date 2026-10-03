@@ -165,7 +165,9 @@ def render(prs, kept, dropped):
     gen = now.strftime("%-d %b %Y, %H:%M UTC")
     mail = (f"mailto:{EMAIL}?subject=" + "Maintenance%20for%20%3Crepo%3E")
 
+    import build_audit
     return TEMPLATE.format(
+        audit_found=sum(r["found"] for r in build_audit.REPOS), audit_repos=len(build_audit.REPOS),
         n=len(kept), r=len(repos), o=len(by_org), b=len(backed), bp=backed_prs,
         lead=e(lead_txt), first=fmt_date(first), stat_html=stat_html, cat_html=cat_html,
         recent_html=recent_html, orgs_html=orgs_html, total=len(prs), drop=e(drop_txt),
@@ -238,6 +240,9 @@ details ul.prs {{ padding-left: 12px; margin-bottom: 8px; }}
 .tier ul {{ padding-left: 20px; margin: 0 0 12px; }}
 .tier li {{ margin-bottom: 4px; }}
 .terms li, .not li {{ margin-bottom: 6px; }}
+.agency {{ background: var(--accent-soft); border-radius: 12px; padding: 4px 20px 8px; margin-top: 32px; }}
+.agency h2 {{ margin-top: 16px; }}
+.agency a.more {{ font-weight: 600; }}
 .start {{ background: var(--accent-soft); border-radius: 12px; padding: 20px; margin-top: 16px; }}
 .start a.mail {{ font-size: 20px; font-weight: 700; overflow-wrap: anywhere; }}
 footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }}
@@ -252,6 +257,12 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <div class="stats">{stat_html}</div>
 <p class="muted">Counted live from GitHub search on {gen}. Left out on purpose: {drop}. First external merge in this set was on {first}.</p>
 
+<section class="agency">
+<h2>White-label capacity for agencies</h2>
+<p>If you build Medusa, Strapi or similar stores for clients, I can take the upgrades and i18n work for your client stores, as PRs your team reviews. The easiest start is a <a href="i18n-audit/">$400 fixed-price i18n audit</a> of one client repo: a written report plus one PR that fixes every broken placeholder, tag and brand leak. In a sample run on {audit_repos} open-source apps it found {audit_found} broken strings, like white-label customers seeing the vendor's name.</p>
+<p><a class="more" href="i18n-audit/">See the audit and the sample report</a></p>
+</section>
+
 <h2>What the merged work is</h2>
 {cat_html}
 <p class="muted" style="margin-top:10px">Categories come from the PR titles, so a few borderline PRs could sit in a neighbouring bucket. Every PR is linked below if you want to check.</p>
@@ -263,8 +274,9 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <p class="muted">Company and foundation labels were checked against each org's GitHub profile and website. {bp} of the {n} PRs went to those owners.</p>
 {orgs_html}
 
-<h2>The offer</h2>
+<h2 id="offer">The offer</h2>
 <p>Same kind of PRs, on a schedule, for a flat fee. All of it happens in writing, in your issues, PR threads and email. I don't do calls.</p>
+<p>Four prices, all in USD. A $400 pilot month, $750 a month for locale upkeep, $1,500 a month for maintenance, and a $400 fixed-price i18n audit for one repo.</p>
 <div class="tiers">
 <section class="tier">
 <header><h3>Pilot month</h3><span class="price">$400 <small>first month, up to 4 hours</small></span></header>
@@ -289,6 +301,10 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <li>A written summary at the end of each month, with what changed and what's waiting on you.</li>
 </ul>
 </section>
+<section class="tier">
+<header><h3>i18n audit and fix</h3><span class="price">$400 <small>fixed price, one repo, up to 40 locales</small></span></header>
+<p>A one-off job, not a subscription. I check every locale against your source language for broken placeholders, ICU syntax, lost tags and brand leaks, then send a written report and one PR that fixes every objective bug, within 3 business days. <a href="i18n-audit/">Details and a sample report</a>.</p>
+</section>
 </div>
 
 <h2>How it runs</h2>
@@ -298,7 +314,7 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <li>I don't need production access, deploy rights or secrets.</li>
 <li>Hours stop at the cap. If a month needs more, I ask in writing before going over.</li>
 <li>Unused hours don't roll over.</li>
-<li>Billed monthly in advance by invoice, in USD. Cancel by email any time and the next month isn't billed.</li>
+<li>Monthly tiers are billed in advance by invoice, in USD. Cancel by email any time and the next month isn't billed. The audit is billed once.</li>
 </ul>
 
 <h2>Not included</h2>
@@ -330,6 +346,8 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 
 
 def main():
+    import build_audit
+    build_audit.main()
     prs, kept, dropped = collect()
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(render(prs, kept, dropped))
