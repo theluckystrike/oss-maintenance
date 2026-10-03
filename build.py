@@ -267,11 +267,11 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <p>Same kind of PRs, on a schedule, for a flat fee. All of it happens in writing, in your issues, PR threads and email. I don't do calls.</p>
 <div class="tiers">
 <section class="tier">
-<header><h3>Pilot month</h3><span class="price">$500 <small>once, up to 4 hours</small></span></header>
+<header><h3>Pilot month</h3><span class="price">$400 <small>first month, up to 4 hours</small></span></header>
 <p>You pick one problem. A red CI job, a lockfile nobody dares to touch, a locale that's half empty. I fix it in PRs you review. At the end of the month you tell me in writing whether to continue. If you don't, nothing renews.</p>
 </section>
 <section class="tier">
-<header><h3>Locale upkeep</h3><span class="price">$450 <small>per month, up to 4 hours</small></span></header>
+<header><h3>Locale upkeep</h3><span class="price">$750 <small>per month, up to 6 hours</small></span></header>
 <ul>
 <li>After each release I fill the keys your existing locales are missing, one PR per release.</li>
 <li>Up to 8 locales.</li>

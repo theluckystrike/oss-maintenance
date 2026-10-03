@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T03:32:42+00:00",
+ "generated_at": "2026-10-03T03:58:14+00:00",
  "dropped": {
   "private": 19,
   "own": 704,
@@ -346,7 +346,7 @@
    "url": "https://github.com/scriptscat/scriptcat/pull/1279",
    "date": "2026-03-07",
    "cat": "docs",
-   "stars": 5468
+   "stars": 5469
   },
   {
    "repo": "openstyles/stylus",
@@ -364,7 +364,7 @@
    "url": "https://github.com/n4ze3m/page-assist/pull/817",
    "date": "2026-03-07",
    "cat": "docs",
-   "stars": 8240
+   "stars": 8241
   },
   {
    "repo": "dailydotdev/daily",
@@ -436,7 +436,7 @@
    "url": "https://github.com/openchamber/openchamber/pull/600",
    "date": "2026-03-04",
    "cat": "code",
-   "stars": 11043
+   "stars": 11044
   },
   {
    "repo": "ninoseki/mitaka",
@@ -643,7 +643,7 @@
    "url": "https://github.com/ChromeDevTools/awesome-chrome-devtools/pull/159",
    "date": "2026-03-04",
    "cat": "docs",
-   "stars": 7153
+   "stars": 7154
   },
   {
    "repo": "webextension-toolbox/webextension-toolbox",
