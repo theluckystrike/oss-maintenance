@@ -1,11 +1,20 @@
 {
- "generated_at": "2026-10-03T09:38:58+00:00",
+ "generated_at": "2026-10-03T13:06:50+00:00",
  "dropped": {
   "private": 19,
   "own": 704,
   "listing": 34
  },
  "merged_external": [
+  {
+   "repo": "yunaremaia/depscan",
+   "org": "yunaremaia",
+   "title": "fix(schemas): allow the go and rubygems ecosystems in list-deps output",
+   "url": "https://github.com/yunaremaia/depscan/pull/225",
+   "date": "2026-10-03",
+   "cat": "code",
+   "stars": 2
+  },
   {
    "repo": "microlinkhq/react-json-view",
    "org": "microlinkhq",
@@ -25,13 +34,22 @@
    "stars": 419
   },
   {
+   "repo": "IndustriAgents/OPCUA-MCP",
+   "org": "IndustriAgents",
+   "title": "Check the actuator write by its status in the simulation revert test (fixes #181)",
+   "url": "https://github.com/IndustriAgents/OPCUA-MCP/pull/188",
+   "date": "2026-10-03",
+   "cat": "code",
+   "stars": 27
+  },
+  {
    "repo": "medusajs/medusa",
    "org": "medusajs",
    "title": "i18n complete the th dashboard locale",
    "url": "https://github.com/medusajs/medusa/pull/16934",
    "date": "2026-10-01",
    "cat": "i18n",
-   "stars": 36563
+   "stars": 36568
   },
   {
    "repo": "WiVRn/WiVRn",
@@ -49,7 +67,7 @@
    "url": "https://github.com/vastsa/PI-Desktop/pull/1180",
    "date": "2026-09-28",
    "cat": "i18n",
-   "stars": 6282
+   "stars": 6291
   },
   {
    "repo": "stellar/stellar-docs",
@@ -85,7 +103,7 @@
    "url": "https://github.com/medusajs/medusa/pull/17007",
    "date": "2026-09-25",
    "cat": "i18n",
-   "stars": 36563
+   "stars": 36568
   },
   {
    "repo": "teddy-vltn/vinted-discord-bot",
@@ -103,7 +121,7 @@
    "url": "https://github.com/medusajs/medusa/pull/16948",
    "date": "2026-09-24",
    "cat": "i18n",
-   "stars": 36563
+   "stars": 36568
   },
   {
    "repo": "medusajs/medusa",
@@ -112,7 +130,7 @@
    "url": "https://github.com/medusajs/medusa/pull/16940",
    "date": "2026-09-24",
    "cat": "i18n",
-   "stars": 36563
+   "stars": 36568
   },
   {
    "repo": "medusajs/medusa",
@@ -121,7 +139,7 @@
    "url": "https://github.com/medusajs/medusa/pull/16939",
    "date": "2026-09-24",
    "cat": "i18n",
-   "stars": 36563
+   "stars": 36568
   },
   {
    "repo": "medusajs/medusa",
@@ -130,7 +148,7 @@
    "url": "https://github.com/medusajs/medusa/pull/16936",
    "date": "2026-09-24",
    "cat": "i18n",
-   "stars": 36563
+   "stars": 36568
   },
   {
    "repo": "medusajs/medusa",
@@ -139,7 +157,7 @@
    "url": "https://github.com/medusajs/medusa/pull/16933",
    "date": "2026-09-24",
    "cat": "i18n",
-   "stars": 36563
+   "stars": 36568
   },
   {
    "repo": "Samuels-Development/sd-phone",
@@ -292,7 +310,7 @@
    "url": "https://github.com/vshulcz/deja-vu/pull/3788",
    "date": "2026-09-19",
    "cat": "docs",
-   "stars": 1120
+   "stars": 1121
   },
   {
    "repo": "vshulcz/deja-vu",
@@ -301,7 +319,7 @@
    "url": "https://github.com/vshulcz/deja-vu/pull/3778",
    "date": "2026-09-19",
    "cat": "docs",
-   "stars": 1120
+   "stars": 1121
   },
   {
    "repo": "spy4x/preact-components",
@@ -346,7 +364,7 @@
    "url": "https://github.com/PrefectHQ/prefect/pull/21916",
    "date": "2026-05-18",
    "cat": "code",
-   "stars": 23963
+   "stars": 23964
   },
   {
    "repo": "HeyPuter/puter",
@@ -355,7 +373,7 @@
    "url": "https://github.com/HeyPuter/puter/pull/2613",
    "date": "2026-03-09",
    "cat": "docs",
-   "stars": 43643
+   "stars": 43644
   },
   {
    "repo": "scriptscat/scriptcat",
@@ -382,7 +400,7 @@
    "url": "https://github.com/n4ze3m/page-assist/pull/817",
    "date": "2026-03-07",
    "cat": "docs",
-   "stars": 8241
+   "stars": 8242
   },
   {
    "repo": "dailydotdev/daily",
@@ -454,7 +472,7 @@
    "url": "https://github.com/openchamber/openchamber/pull/600",
    "date": "2026-03-04",
    "cat": "code",
-   "stars": 11050
+   "stars": 11056
   },
   {
    "repo": "ninoseki/mitaka",
@@ -553,7 +571,7 @@
    "url": "https://github.com/lingdojo/kana-dojo/pull/7135",
    "date": "2026-03-04",
    "cat": "docs",
-   "stars": 3549
+   "stars": 3551
   },
   {
    "repo": "ken107/read-aloud",
@@ -607,7 +625,7 @@
    "url": "https://github.com/dongdongbh/Mindwtr/pull/254",
    "date": "2026-03-04",
    "cat": "code",
-   "stars": 2181
+   "stars": 2183
   },
   {
    "repo": "capJavert/clippy",
@@ -652,7 +670,7 @@
    "url": "https://github.com/DIYgod/DPlayer/pull/1370",
    "date": "2026-03-04",
    "cat": "docs",
-   "stars": 16514
+   "stars": 16515
   },
   {
    "repo": "ChromeDevTools/awesome-chrome-devtools",

@@ -18,6 +18,69 @@ OWNER = "theluckystrike"
 EMAIL = "lipmichal@gmail.com"
 OUT = Path(__file__).resolve().parent / "docs" / "index.html"
 
+# ======================================================================
+# PAYMENT LINKS: the owner pastes Stripe payment link URLs here.
+# Each value is "" until filled. While a value is "", no Pay now button is
+# shown for it. Paste the full https://buy.stripe.com/... URL, then run:
+#   python3 build.py && git add docs && git commit -m "Add payment links" && git push
+#   audit  = $400 one-time i18n audit and fix
+#   pilot  = $400 one-time pilot month
+#   upkeep = $750 a month locale upkeep (Stripe subscription link)
+# ======================================================================
+PAYMENT_LINKS = {"audit": "", "pilot": "", "upkeep": ""}
+
+REPO_URL = "https://github.com/theluckystrike/oss-maintenance"
+FORMS = {
+    "audit": REPO_URL + "/issues/new?template=i18n-audit.yml",
+    "pilot": REPO_URL + "/issues/new?template=pilot-or-upkeep.yml",
+}
+PAY_LABELS = {"audit": "Pay now, audit $400", "pilot": "Pay now, pilot $400",
+              "upkeep": "Pay now, upkeep $750 a month"}
+
+START_CSS = """
+.btns { display: flex; flex-wrap: wrap; gap: 10px; margin: 4px 0 14px; }
+.btn { display: inline-block; padding: 11px 16px; border-radius: 8px; font-weight: 600;
+  text-decoration: none; border: 1px solid var(--accent); line-height: 1.3; }
+.btn.go { background: var(--accent); color: var(--bg); }
+.btn.pay, .btn.alt { background: var(--card); color: var(--accent); }
+.btn:hover { text-decoration: underline; }
+.start ol { padding-left: 22px; margin: 0 0 12px; }
+.start ol li { margin-bottom: 6px; }
+.start .row { margin: 0 0 6px; font-weight: 600; }
+"""
+
+
+def start_block(first, mail_href, h=2):
+    """The Start now block. first = "audit" or "pilot", whichever leads on this page.
+    A Pay now button appears only for PAYMENT_LINKS values that are filled in."""
+    def esc(x):
+        return html.escape(str(x), quote=True)
+    offers = {
+        "audit": ("i18n audit and fix, $400 fixed", "Start now: i18n audit", ["audit"]),
+        "pilot": ("Pilot month $400, or locale upkeep $750 a month", "Start now: pilot or upkeep",
+                  ["pilot", "upkeep"]),
+    }
+    order = [first] + [k for k in offers if k != first]
+    rows = []
+    for k in order:
+        label, go, pays = offers[k]
+        btns = [f'<a class="btn go" href="{esc(FORMS[k])}">{esc(go)}</a>']
+        btns += [f'<a class="btn pay" href="{esc(PAYMENT_LINKS[p])}">{esc(PAY_LABELS[p])}</a>'
+                 for p in pays if PAYMENT_LINKS.get(p, "").startswith("https://")]
+        rows.append(f'<p class="row">{esc(label)}</p><div class="btns">{"".join(btns)}</div>')
+    return f"""<h{h} id="start">Start now</h{h}>
+<div class="start">
+{"".join(rows)}
+<p>Or email <a href="{esc(mail_href)}">{esc(EMAIL)}</a>. Use email for a private repo or anything you'd rather not post in public, since the form opens a public GitHub issue.</p>
+<p class="row">What happens next</p>
+<ol>
+<li>I reply in writing within 24 hours with the scope and a payment link.</li>
+<li>Work starts when the payment arrives.</li>
+<li>You get the written report and the first PR within 3 business days.</li>
+</ol>
+<p class="muted">No calls. Every step happens in writing, in the issue or by email.</p>
+</div>"""
+
 # Orgs checked by hand on 2026-10-03: GitHub org profile links to the website
 # named here, and that website is a company or foundation with its own product.
 # An org only gets the label if it also shows up in the live data below.
@@ -171,7 +234,8 @@ def render(prs, kept, dropped):
         n=len(kept), r=len(repos), o=len(by_org), b=len(backed), bp=backed_prs,
         lead=e(lead_txt), first=fmt_date(first), stat_html=stat_html, cat_html=cat_html,
         recent_html=recent_html, orgs_html=orgs_html, total=len(prs), drop=e(drop_txt),
-        gen=gen, email=EMAIL, mail=mail, owner=OWNER)
+        gen=gen, email=EMAIL, mail=mail, owner=OWNER,
+        start=start_block("pilot", mail), start_css=START_CSS)
 
 
 TEMPLATE = """<!doctype html>
@@ -245,6 +309,7 @@ details ul.prs {{ padding-left: 12px; margin-bottom: 8px; }}
 .agency a.more {{ font-weight: 600; }}
 .start {{ background: var(--accent-soft); border-radius: 12px; padding: 20px; margin-top: 16px; }}
 .start a.mail {{ font-size: 20px; font-weight: 700; overflow-wrap: anywhere; }}
+{start_css}
 footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }}
 </style>
 </head>
@@ -254,6 +319,7 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <h1>Maintenance for teams that already merged my work</h1>
 <p class="lead">{n} of my pull requests are merged in {r} public repos that belong to {o} different owners. {b} of those owners are companies or foundations, {lead} among them.</p>
 <p>If your team merged one of these, you've already reviewed how I work. This page lists every one of them, then offers the same kind of work on a schedule for a flat monthly fee.</p>
+<p><a class="btn go" href="#start">Start now</a> <a class="btn alt" href="#offer">See prices</a></p>
 <div class="stats">{stat_html}</div>
 <p class="muted">Counted live from GitHub search on {gen}. Left out on purpose: {drop}. First external merge in this set was on {first}.</p>
 
@@ -314,7 +380,7 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <li>I don't need production access, deploy rights or secrets.</li>
 <li>Hours stop at the cap. If a month needs more, I ask in writing before going over.</li>
 <li>Unused hours don't roll over.</li>
-<li>Monthly tiers are billed in advance by invoice, in USD. Cancel by email any time and the next month isn't billed. The audit is billed once.</li>
+<li>Monthly tiers are billed in advance, in USD, by card payment link or bank transfer invoice. Cancel by email any time and the next month isn't billed. The audit is billed once.</li>
 </ul>
 
 <h2>Not included</h2>
@@ -326,11 +392,7 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <li>Native-speaker sign-off on translations.</li>
 </ul>
 
-<h2>To start</h2>
-<div class="start">
-<p>Email me with your repo link and the problem you'd hand over first. I reply in writing within 24 hours.</p>
-<p><a class="mail" href="{mail}">{email}</a></p>
-</div>
+{start}
 
 <h2>To be clear</h2>
 <p>None of the projects on this page pays me. Their maintainers reviewed and merged public PRs, and being listed here doesn't mean they endorse this offer. I have no paying maintenance clients yet, so there are no testimonials. The numbers above are the whole track record, and each one links to the PR.</p>

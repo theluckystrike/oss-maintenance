@@ -1,0 +1,74 @@
+name: Request an i18n audit and fix ($400 fixed)
+description: One repo, up to 40 locales. A written report and one PR that fixes every broken placeholder, tag and brand leak.
+title: "[i18n audit] "
+labels: ["audit-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking. Here is how it works.
+
+        1. I reply on this issue in writing within 24 hours with the scope and a payment link.
+        2. Work starts when the payment arrives.
+        3. You get the written report and the PR within 3 business days.
+
+        This issue is public. Only write what you're fine sharing in public. For a private repo or private details, email lipmichal@gmail.com instead. No calls, everything happens in writing.
+  - type: input
+    id: repo
+    attributes:
+      label: Repo URL
+      description: The repo with the locale files.
+      placeholder: https://github.com/your-org/your-app
+    validations:
+      required: true
+  - type: textarea
+    id: locales
+    attributes:
+      label: Which locales
+      description: All of them, or a list. Up to 40 locales are included.
+      placeholder: "All, or for example: de, fr, ja, pt-BR"
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      description: A date you need it by, if any.
+      placeholder: "20 Oct 2026, or none"
+    validations:
+      required: false
+  - type: dropdown
+    id: visibility
+    attributes:
+      label: Is the repo public or private?
+      description: For a private repo I'll ask for read access on GitHub. No production access, deploy rights or secrets.
+      options:
+        - Public
+        - Private (I'll ask for read access)
+    validations:
+      required: true
+  - type: input
+    id: billing
+    attributes:
+      label: Billing contact name and company
+      description: Who the invoice or receipt goes to.
+      placeholder: "Jane Doe, Example Ltd."
+    validations:
+      required: true
+  - type: dropdown
+    id: payment
+    attributes:
+      label: How do you want to pay?
+      description: Price is $400 USD, fixed.
+      options:
+        - Card, by payment link
+        - Bank transfer, by invoice
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Optional. For example, if your translations come from a TMS like Crowdin or Lokalise.
+    validations:
+      required: false

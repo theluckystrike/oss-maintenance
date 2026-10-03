@@ -1,0 +1,80 @@
+name: Start a pilot month ($400) or locale upkeep ($750 a month)
+description: Hand over your first 3 tasks. Work arrives as normal PRs you review.
+title: "[pilot] "
+labels: ["pilot-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking. Here is how it works.
+
+        1. I reply on this issue in writing within 24 hours with the scope and a payment link.
+        2. Work starts when the payment arrives.
+        3. You get the first PR within 3 business days.
+
+        Pilot month: $400, up to 4 hours, nothing renews unless you say so in writing. Locale upkeep: $750 a month, up to 6 hours, cancel by email any time.
+
+        This issue is public. Only write what you're fine sharing in public. For a private repo or private details, email lipmichal@gmail.com instead. No calls, everything happens in writing.
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Which plan
+      options:
+        - Pilot month, $400
+        - Locale upkeep, $750 a month
+        - Not sure yet, tell me which fits
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Repo URL
+      placeholder: https://github.com/your-org/your-app
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: The first 3 tasks
+      description: What you'd hand over first. Links to issues are fine.
+      placeholder: |
+        1. CI job on main is red since the Node 22 runner update
+        2. German locale is missing about 60 keys
+        3. Lockfile update nobody wants to touch
+    validations:
+      required: true
+  - type: textarea
+    id: response
+    attributes:
+      label: Response time you need
+      description: The standard is a written reply within 24 hours. There is no on-call.
+      placeholder: "24 hours is fine, or tell me what you need"
+    validations:
+      required: false
+  - type: dropdown
+    id: visibility
+    attributes:
+      label: Is the repo public or private?
+      description: For a private repo I'll ask for read access on GitHub. No production access, deploy rights or secrets.
+      options:
+        - Public
+        - Private (I'll ask for read access)
+    validations:
+      required: true
+  - type: input
+    id: billing
+    attributes:
+      label: Billing contact name and company
+      description: Who the invoice or receipt goes to.
+      placeholder: "Jane Doe, Example Ltd."
+    validations:
+      required: true
+  - type: dropdown
+    id: payment
+    attributes:
+      label: How do you want to pay?
+      options:
+        - Card, by payment link
+        - Bank transfer, by invoice
+    validations:
+      required: true

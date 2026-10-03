@@ -238,11 +238,13 @@ def render():
         f'<td>{t[2]}</td><td>{t[3]}</td><td>{e(t[4])}</td></tr>' for t in TMS)
 
     mail = f"mailto:{EMAIL}?subject=i18n%20audit%20for%20%3Crepo%3E"
+    from build import START_CSS, start_block  # PAYMENT_LINKS live in build.py
     return TEMPLATE.format(
         price=PRICE, maxloc=MAX_LOCALES, days=DAYS, found=found, fixed=fixed,
         merged=merged, open=open_, nrepos=len(REPOS), cards="".join(cards),
         tms_rows=tms_rows, tms_found=tms_found, ntms=len(TMS), gen=gen,
-        email=EMAIL, mail=mail, owner=OWNER), live
+        email=EMAIL, mail=mail, owner=OWNER,
+        start=start_block("audit", mail), start_css=START_CSS), live
 
 
 TEMPLATE = """<!doctype html>
@@ -299,6 +301,7 @@ ul.plain {{ padding-left: 20px; margin: 0 0 12px; }}
 ul.plain li {{ margin-bottom: 6px; }}
 .start {{ background: var(--accent-soft); border-radius: 12px; padding: 20px; margin-top: 16px; }}
 .start a.mail {{ font-size: 20px; font-weight: 700; overflow-wrap: anywhere; }}
+{start_css}
 .repo-card {{ background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin: 16px 0; }}
 .repo-card header {{ display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; justify-content: space-between; margin-bottom: 4px; }}
 .st {{ font-size: 13px; border-radius: 999px; padding: 2px 10px; white-space: nowrap; }}
@@ -336,6 +339,7 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <p class="kicker"><a href="../">OSS maintenance</a> by Michael, <a href="https://github.com/{owner}">github.com/{owner}</a>, works in writing</p>
 <h1>Your translated app is showing customers broken text</h1>
 <p class="lead">I check every locale file in your app against the source language, then send one PR that fixes every objective bug. ${price} fixed, one repo, written report in {days} business days.</p>
+<p><a class="btn go" href="#start">Start now</a> <a class="btn alt" href="#sample">See the sample report</a></p>
 <p>Translations break quietly. Few teams can read most of their own locales, tests run in English, and the bug only shows up on a customer's screen. In {nrepos} open-source apps that companies ship to their own customers, I found these this week.</p>
 <ul class="damage">
 <li><b>White-label customers saw the vendor's name.</b> In ToolJet, 46 strings in 8 languages lost the white-label name, and 44 of them printed "ToolJet" instead on the login, sign-up, Slack and Google Sheets screens.</li>
@@ -380,7 +384,7 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <li>Report and PR within {days} business days after I can read the repo.</li>
 <li>A public repo needs only the link. A private one needs a read invite on GitHub. No production access, deploy rights or secrets.</li>
 <li>Everything happens in writing, by email and in the PR. I don't do calls.</li>
-<li>Billed by invoice, in USD.</li>
+<li>Paid in USD, by card payment link or bank transfer invoice.</li>
 </ul>
 <p class="muted">Not included: native-speaker review, translating keys that are missing entirely, and new languages. Keeping locales filled after every release is the <a href="../#offer">$750 a month locale upkeep</a> on the main page.</p>
 </div>
@@ -388,11 +392,7 @@ footer {{ margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line)
 <h2>For agencies</h2>
 <p>If you build Medusa, Strapi or similar stores and admin apps for clients, I can run this audit on a client's repo as white-label capacity. The report can go out under your agency's name, and the PR goes to the client repo for your team to review. Framework upgrades and ongoing locale work are on the <a href="../#offer">main page</a>.</p>
 
-<h2>To start</h2>
-<div class="start">
-<p>Email me the repo link. If it's private, say so and I'll send the GitHub username to invite. I reply in writing within 24 hours.</p>
-<p><a class="mail" href="{mail}">{email}</a></p>
-</div>
+{start}
 
 <h2 id="sample">Sample report</h2>
 <p>The same audit, run on {nrepos} public apps on 3 Oct 2026. "Broken strings found" counts one string in one locale. Every before and after below is quoted from the PR diff.</p>
