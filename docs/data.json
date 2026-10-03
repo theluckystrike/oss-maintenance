@@ -1,0 +1,811 @@
+{
+ "generated_at": "2026-10-03T03:32:42+00:00",
+ "dropped": {
+  "private": 19,
+  "own": 704,
+  "listing": 34
+ },
+ "merged_external": [
+  {
+   "repo": "medusajs/medusa",
+   "org": "medusajs",
+   "title": "i18n complete the th dashboard locale",
+   "url": "https://github.com/medusajs/medusa/pull/16934",
+   "date": "2026-10-01",
+   "cat": "i18n",
+   "stars": 36557
+  },
+  {
+   "repo": "WiVRn/WiVRn",
+   "org": "WiVRn",
+   "title": "Add missing German translations",
+   "url": "https://github.com/WiVRn/WiVRn/pull/1136",
+   "date": "2026-09-29",
+   "cat": "i18n",
+   "stars": 1744
+  },
+  {
+   "repo": "vastsa/PI-Desktop",
+   "org": "vastsa",
+   "title": "Fix German catalog Sie-form consistency and restore noProjectSessions wording",
+   "url": "https://github.com/vastsa/PI-Desktop/pull/1180",
+   "date": "2026-09-28",
+   "cat": "i18n",
+   "stars": 6272
+  },
+  {
+   "repo": "stellar/stellar-docs",
+   "org": "stellar",
+   "title": "Fix num_subentries and the minimum balance formula in the Hubble accounts tables",
+   "url": "https://github.com/stellar/stellar-docs/pull/2865",
+   "date": "2026-09-28",
+   "cat": "docs",
+   "stars": 141
+  },
+  {
+   "repo": "whyboris/Video-Hub-App",
+   "org": "whyboris",
+   "title": "add hebrew translation",
+   "url": "https://github.com/whyboris/Video-Hub-App/pull/993",
+   "date": "2026-09-25",
+   "cat": "i18n",
+   "stars": 730
+  },
+  {
+   "repo": "mtrnix/metronix-memory",
+   "org": "mtrnix",
+   "title": "docs add retrieval tuning guide for the fusion knobs",
+   "url": "https://github.com/mtrnix/metronix-memory/pull/507",
+   "date": "2026-09-25",
+   "cat": "docs",
+   "stars": 106
+  },
+  {
+   "repo": "medusajs/medusa",
+   "org": "medusajs",
+   "title": "add missing hungarian translations in admin dashboard",
+   "url": "https://github.com/medusajs/medusa/pull/17007",
+   "date": "2026-09-25",
+   "cat": "i18n",
+   "stars": 36557
+  },
+  {
+   "repo": "teddy-vltn/vinted-discord-bot",
+   "org": "teddy-vltn",
+   "title": "Complete missing locale keys in es, it, de, fr and pl",
+   "url": "https://github.com/teddy-vltn/vinted-discord-bot/pull/32",
+   "date": "2026-09-24",
+   "cat": "i18n",
+   "stars": 191
+  },
+  {
+   "repo": "medusajs/medusa",
+   "org": "medusajs",
+   "title": "chore(dashboard): i18n complete the el dashboard locale",
+   "url": "https://github.com/medusajs/medusa/pull/16948",
+   "date": "2026-09-24",
+   "cat": "i18n",
+   "stars": 36557
+  },
+  {
+   "repo": "medusajs/medusa",
+   "org": "medusajs",
+   "title": "i18n complete the mk dashboard locale",
+   "url": "https://github.com/medusajs/medusa/pull/16940",
+   "date": "2026-09-24",
+   "cat": "i18n",
+   "stars": 36557
+  },
+  {
+   "repo": "medusajs/medusa",
+   "org": "medusajs",
+   "title": "chore(dashboard): i18n complete the uk dashboard locale",
+   "url": "https://github.com/medusajs/medusa/pull/16939",
+   "date": "2026-09-24",
+   "cat": "i18n",
+   "stars": 36557
+  },
+  {
+   "repo": "medusajs/medusa",
+   "org": "medusajs",
+   "title": "chore(dashboard): i18n complete the vi dashboard locale",
+   "url": "https://github.com/medusajs/medusa/pull/16936",
+   "date": "2026-09-24",
+   "cat": "i18n",
+   "stars": 36557
+  },
+  {
+   "repo": "medusajs/medusa",
+   "org": "medusajs",
+   "title": "fix(dashboard): i18n fill the 5 missing keys in fi hr pl sv tr",
+   "url": "https://github.com/medusajs/medusa/pull/16933",
+   "date": "2026-09-24",
+   "cat": "i18n",
+   "stars": 36557
+  },
+  {
+   "repo": "Samuels-Development/sd-phone",
+   "org": "Samuels-Development",
+   "title": "Complete missing locale keys in 12 languages (6,132 keys)",
+   "url": "https://github.com/Samuels-Development/sd-phone/pull/293",
+   "date": "2026-09-24",
+   "cat": "i18n",
+   "stars": 158
+  },
+  {
+   "repo": "DoluTattoo/dolu_tool",
+   "org": "DoluTattoo",
+   "title": "Complete missing locale strings (de, es, pt, it, ja)",
+   "url": "https://github.com/DoluTattoo/dolu_tool/pull/71",
+   "date": "2026-09-24",
+   "cat": "i18n",
+   "stars": 291
+  },
+  {
+   "repo": "unidoc/isms",
+   "org": "unidoc",
+   "title": "api use null type arrays for the four optional date and email fields",
+   "url": "https://github.com/unidoc/isms/pull/330",
+   "date": "2026-09-23",
+   "cat": "code",
+   "stars": 34
+  },
+  {
+   "repo": "kurone-kito/udonsharp-toybox",
+   "org": "kurone-kito",
+   "title": "docs align API comments with implementations for issue 58",
+   "url": "https://github.com/kurone-kito/udonsharp-toybox/pull/68",
+   "date": "2026-09-23",
+   "cat": "docs",
+   "stars": 10
+  },
+  {
+   "repo": "toss/react-simplikit",
+   "org": "toss",
+   "title": "docs add zh-Hans translations for all 42 hooks",
+   "url": "https://github.com/toss/react-simplikit/pull/519",
+   "date": "2026-09-22",
+   "cat": "i18n",
+   "stars": 356
+  },
+  {
+   "repo": "sbigstar0310/cc-donut",
+   "org": "sbigstar0310",
+   "title": "docs sweep for the paid hop's arming conditions",
+   "url": "https://github.com/sbigstar0310/cc-donut/pull/66",
+   "date": "2026-09-21",
+   "cat": "docs",
+   "stars": 0
+  },
+  {
+   "repo": "geoparquet-io/tylertoo",
+   "org": "geoparquet-io",
+   "title": "docs document the geometry-test-data submodule init",
+   "url": "https://github.com/geoparquet-io/tylertoo/pull/464",
+   "date": "2026-09-21",
+   "cat": "docs",
+   "stars": 38
+  },
+  {
+   "repo": "chrisalunlloyd2-sudo/mindpalace",
+   "org": "chrisalunlloyd2-sudo",
+   "title": "docs align ModelConfig javadoc and the model inventory with the constants",
+   "url": "https://github.com/chrisalunlloyd2-sudo/mindpalace/pull/81",
+   "date": "2026-09-21",
+   "cat": "docs",
+   "stars": 2
+  },
+  {
+   "repo": "adlerqa/wardeniq",
+   "org": "adlerqa",
+   "title": "docs fix the mongod.conf header and document the MongoDB 8.1 floor",
+   "url": "https://github.com/adlerqa/wardeniq/pull/32",
+   "date": "2026-09-21",
+   "cat": "docs",
+   "stars": 10
+  },
+  {
+   "repo": "vish288/mcp-gitlab",
+   "org": "vish288",
+   "title": "Bound fastmcp below the next major version",
+   "url": "https://github.com/vish288/mcp-gitlab/pull/82",
+   "date": "2026-09-20",
+   "cat": "code",
+   "stars": 6
+  },
+  {
+   "repo": "vish288/mcp-gitlab",
+   "org": "vish288",
+   "title": "Guard HTML responses before the raw return in _request",
+   "url": "https://github.com/vish288/mcp-gitlab/pull/81",
+   "date": "2026-09-20",
+   "cat": "code",
+   "stars": 6
+  },
+  {
+   "repo": "alvarotrigo/fullPage.js",
+   "org": "alvarotrigo",
+   "title": "docs correct fitToSectionDelay default to 600",
+   "url": "https://github.com/alvarotrigo/fullPage.js/pull/4748",
+   "date": "2026-09-20",
+   "cat": "docs",
+   "stars": 35385
+  },
+  {
+   "repo": "Cyrax321/SNAGLINE",
+   "org": "Cyrax321",
+   "title": "docs: replace hand-maintained test counts with self-updating sources",
+   "url": "https://github.com/Cyrax321/SNAGLINE/pull/334",
+   "date": "2026-09-20",
+   "cat": "docs",
+   "stars": 13
+  },
+  {
+   "repo": "Cyrax321/CONTINUUM",
+   "org": "Cyrax321",
+   "title": "docs: the Phase 6 suite is 14 scenarios and 17 tests, not 12 and 15",
+   "url": "https://github.com/Cyrax321/CONTINUUM/pull/1314",
+   "date": "2026-09-20",
+   "cat": "docs",
+   "stars": 28
+  },
+  {
+   "repo": "yunaremaia/depscan",
+   "org": "yunaremaia",
+   "title": "docs publish JSON Schemas for the JSON outputs",
+   "url": "https://github.com/yunaremaia/depscan/pull/106",
+   "date": "2026-09-19",
+   "cat": "docs",
+   "stars": 2
+  },
+  {
+   "repo": "willdady/platypus",
+   "org": "willdady",
+   "title": "docs(adr) correct ADR-0015 status to accepted-pending-implementation",
+   "url": "https://github.com/willdady/platypus/pull/919",
+   "date": "2026-09-19",
+   "cat": "docs",
+   "stars": 114
+  },
+  {
+   "repo": "vshulcz/deja-vu",
+   "org": "vshulcz",
+   "title": "docs add the Chinese guide for recovering a deleted session",
+   "url": "https://github.com/vshulcz/deja-vu/pull/3788",
+   "date": "2026-09-19",
+   "cat": "docs",
+   "stars": 1120
+  },
+  {
+   "repo": "vshulcz/deja-vu",
+   "org": "vshulcz",
+   "title": "docs add Chinese guide for finding a session",
+   "url": "https://github.com/vshulcz/deja-vu/pull/3778",
+   "date": "2026-09-19",
+   "cat": "docs",
+   "stars": 1120
+  },
+  {
+   "repo": "spy4x/preact-components",
+   "org": "spy4x",
+   "title": "docs(ui): align the skeleton metrics with the measurements",
+   "url": "https://github.com/spy4x/preact-components/pull/85",
+   "date": "2026-09-19",
+   "cat": "docs",
+   "stars": 0
+  },
+  {
+   "repo": "lancegoyke/fitness-store",
+   "org": "lancegoyke",
+   "title": "docs point the test data setup at the seed commands that exist",
+   "url": "https://github.com/lancegoyke/fitness-store/pull/537",
+   "date": "2026-09-19",
+   "cat": "docs",
+   "stars": 6
+  },
+  {
+   "repo": "dgivens/homeassistant-nina-astrophotography",
+   "org": "dgivens",
+   "title": "docs add the Paused guider state to the lists that omit it",
+   "url": "https://github.com/dgivens/homeassistant-nina-astrophotography/pull/84",
+   "date": "2026-09-19",
+   "cat": "docs",
+   "stars": 0
+  },
+  {
+   "repo": "IndustriAgents/OPCUA-MCP",
+   "org": "IndustriAgents",
+   "title": "docs refresh the contract header and stale architecture counts",
+   "url": "https://github.com/IndustriAgents/OPCUA-MCP/pull/122",
+   "date": "2026-09-19",
+   "cat": "docs",
+   "stars": 27
+  },
+  {
+   "repo": "PrefectHQ/prefect",
+   "org": "PrefectHQ",
+   "title": "hardening: validate PEP 508 deps in execute_bundle_in_subprocess",
+   "url": "https://github.com/PrefectHQ/prefect/pull/21916",
+   "date": "2026-05-18",
+   "cat": "code",
+   "stars": 23963
+  },
+  {
+   "repo": "HeyPuter/puter",
+   "org": "HeyPuter",
+   "title": "Add Networking examples to docs index page",
+   "url": "https://github.com/HeyPuter/puter/pull/2613",
+   "date": "2026-03-09",
+   "cat": "docs",
+   "stars": 43643
+  },
+  {
+   "repo": "scriptscat/scriptcat",
+   "org": "scriptscat",
+   "title": "docs: update Chrome Web Store URLs to new domain",
+   "url": "https://github.com/scriptscat/scriptcat/pull/1279",
+   "date": "2026-03-07",
+   "cat": "docs",
+   "stars": 5468
+  },
+  {
+   "repo": "openstyles/stylus",
+   "org": "openstyles",
+   "title": "docs: update Chrome Web Store URLs to new domain",
+   "url": "https://github.com/openstyles/stylus/pull/2058",
+   "date": "2026-03-07",
+   "cat": "docs",
+   "stars": 6924
+  },
+  {
+   "repo": "n4ze3m/page-assist",
+   "org": "n4ze3m",
+   "title": "docs: update Chrome Web Store URLs to new domain",
+   "url": "https://github.com/n4ze3m/page-assist/pull/817",
+   "date": "2026-03-07",
+   "cat": "docs",
+   "stars": 8240
+  },
+  {
+   "repo": "dailydotdev/daily",
+   "org": "dailydotdev",
+   "title": "docs: update Chrome Web Store URL to new domain",
+   "url": "https://github.com/dailydotdev/daily/pull/2065",
+   "date": "2026-03-07",
+   "cat": "docs",
+   "stars": 20088
+  },
+  {
+   "repo": "antfu-collective/taze",
+   "org": "antfu-collective",
+   "title": "docs: fix 'Configures' to 'Configuration' in README heading",
+   "url": "https://github.com/antfu-collective/taze/pull/246",
+   "date": "2026-03-06",
+   "cat": "docs",
+   "stars": 4284
+  },
+  {
+   "repo": "shivammathur/setup-php",
+   "org": "shivammathur",
+   "title": "fix: use latest in URL when version is empty",
+   "url": "https://github.com/shivammathur/setup-php/pull/1064",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 3264
+  },
+  {
+   "repo": "ryanpcmcquen/workflowyCodeFormatter",
+   "org": "ryanpcmcquen",
+   "title": "fix: update Chrome Web Store URL to new format",
+   "url": "https://github.com/ryanpcmcquen/workflowyCodeFormatter/pull/24",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 36
+  },
+  {
+   "repo": "raindropio/app",
+   "org": "raindropio",
+   "title": "fix: update Chrome Web Store URL to new domain",
+   "url": "https://github.com/raindropio/app/pull/212",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 1603
+  },
+  {
+   "repo": "piroor/treestyletab",
+   "org": "piroor",
+   "title": "fix: Update broken MDN links",
+   "url": "https://github.com/piroor/treestyletab/pull/3879",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 3783
+  },
+  {
+   "repo": "piroor/multipletab",
+   "org": "piroor",
+   "title": "fix: Update deprecated MDN URLs to new URL structure",
+   "url": "https://github.com/piroor/multipletab/pull/261",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 85
+  },
+  {
+   "repo": "openchamber/openchamber",
+   "org": "openchamber",
+   "title": "fix: remove orientation any to respect OS rotation lock",
+   "url": "https://github.com/openchamber/openchamber/pull/600",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 11043
+  },
+  {
+   "repo": "ninoseki/mitaka",
+   "org": "ninoseki",
+   "title": "docs: update Chrome Web Store URLs to new domain",
+   "url": "https://github.com/ninoseki/mitaka/pull/909",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 1872
+  },
+  {
+   "repo": "microlinkhq/ua",
+   "org": "microlinkhq",
+   "title": "feat(types): add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/ua/pull/16",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 2
+  },
+  {
+   "repo": "microlinkhq/tinyrun",
+   "org": "microlinkhq",
+   "title": "feat(types): add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/tinyrun/pull/13",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 11
+  },
+  {
+   "repo": "microlinkhq/spotify-url-info",
+   "org": "microlinkhq",
+   "title": "feat(types): add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/spotify-url-info/pull/140",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 93
+  },
+  {
+   "repo": "microlinkhq/recipes",
+   "org": "microlinkhq",
+   "title": "feat(types): add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/recipes/pull/28",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 17
+  },
+  {
+   "repo": "microlinkhq/react-json-view",
+   "org": "microlinkhq",
+   "title": "feat: add types field to package.json",
+   "url": "https://github.com/microlinkhq/react-json-view/pull/102",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 419
+  },
+  {
+   "repo": "microlinkhq/oembed-spec",
+   "org": "microlinkhq",
+   "title": "feat(types): add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/oembed-spec/pull/40",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 23
+  },
+  {
+   "repo": "microlinkhq/memoize-token",
+   "org": "microlinkhq",
+   "title": "feat(types): add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/memoize-token/pull/13",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 3
+  },
+  {
+   "repo": "microlinkhq/keyv-s3",
+   "org": "microlinkhq",
+   "title": "feat(types): add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/keyv-s3/pull/44",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 14
+  },
+  {
+   "repo": "microlinkhq/async-memoize-one",
+   "org": "microlinkhq",
+   "title": "feat: add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/async-memoize-one/pull/15",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 28
+  },
+  {
+   "repo": "lingdojo/kana-dojo",
+   "org": "lingdojo",
+   "title": "content: add trivia question #37 about cherry blossoms",
+   "url": "https://github.com/lingdojo/kana-dojo/pull/7135",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 3548
+  },
+  {
+   "repo": "ken107/read-aloud",
+   "org": "ken107",
+   "title": "Update Chrome Web Store URL to new format",
+   "url": "https://github.com/ken107/read-aloud/pull/498",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 1755
+  },
+  {
+   "repo": "iipc/awesome-web-archiving",
+   "org": "iipc",
+   "title": "Update Chrome Web Store URLs to new format",
+   "url": "https://github.com/iipc/awesome-web-archiving/pull/169",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 2653
+  },
+  {
+   "repo": "hanydd/BilibiliSponsorBlock",
+   "org": "hanydd",
+   "title": "fix(deps): resolve 4 high severity minimatch ReDoS vulnerabilities",
+   "url": "https://github.com/hanydd/BilibiliSponsorBlock/pull/247",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 6168
+  },
+  {
+   "repo": "greasemonkey/greasemonkey",
+   "org": "greasemonkey",
+   "title": "Fix broken MDN links",
+   "url": "https://github.com/greasemonkey/greasemonkey/pull/3227",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 2599
+  },
+  {
+   "repo": "gopasspw/gopass",
+   "org": "gopasspw",
+   "title": "Fix broken MDN link (developer.mozilla.org/en-US/Add-ons \u2192 /en-US/docs/Mozilla/Add-ons)",
+   "url": "https://github.com/gopasspw/gopass/pull/3354",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 7239
+  },
+  {
+   "repo": "dongdongbh/Mindwtr",
+   "org": "dongdongbh",
+   "title": "fix: sort projects by order field in task picker",
+   "url": "https://github.com/dongdongbh/Mindwtr/pull/254",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 2179
+  },
+  {
+   "repo": "capJavert/clippy",
+   "org": "capJavert",
+   "title": "fix: Update deprecated MDN URLs to new format",
+   "url": "https://github.com/capJavert/clippy/pull/39",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 35
+  },
+  {
+   "repo": "SanderRonde/CustomRightClickMenu",
+   "org": "SanderRonde",
+   "title": "fix: Update broken MDN link to new URL structure",
+   "url": "https://github.com/SanderRonde/CustomRightClickMenu/pull/89",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 259
+  },
+  {
+   "repo": "GoogleChrome/chrome-extensions-samples",
+   "org": "GoogleChrome",
+   "title": "feat: add chrome.commands API sample",
+   "url": "https://github.com/GoogleChrome/chrome-extensions-samples/pull/1629",
+   "date": "2026-03-04",
+   "cat": "code",
+   "stars": 17794
+  },
+  {
+   "repo": "FirefoxBar/HeaderEditor",
+   "org": "FirefoxBar",
+   "title": "docs: update MDN links",
+   "url": "https://github.com/FirefoxBar/HeaderEditor/pull/336",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 1303
+  },
+  {
+   "repo": "DIYgod/DPlayer",
+   "org": "DIYgod",
+   "title": "docs: upgrade HTTP image link to HTTPS in README",
+   "url": "https://github.com/DIYgod/DPlayer/pull/1370",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 16514
+  },
+  {
+   "repo": "ChromeDevTools/awesome-chrome-devtools",
+   "org": "ChromeDevTools",
+   "title": "fix: update Chrome Web Store URLs to new domain",
+   "url": "https://github.com/ChromeDevTools/awesome-chrome-devtools/pull/159",
+   "date": "2026-03-04",
+   "cat": "docs",
+   "stars": 7153
+  },
+  {
+   "repo": "webextension-toolbox/webextension-toolbox",
+   "org": "webextension-toolbox",
+   "title": "fix(deps): consolidate security dependency updates",
+   "url": "https://github.com/webextension-toolbox/webextension-toolbox/pull/1178",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 790
+  },
+  {
+   "repo": "tilfinltd/aws-extend-switch-roles",
+   "org": "tilfinltd",
+   "title": "docs(readme): fix outdated Chrome Web Store URLs",
+   "url": "https://github.com/tilfinltd/aws-extend-switch-roles/pull/399",
+   "date": "2026-03-03",
+   "cat": "docs",
+   "stars": 1430
+  },
+  {
+   "repo": "rugk/website-dark-mode-switcher",
+   "org": "rugk",
+   "title": "fix(deps): resolve 4 security vulnerabilities",
+   "url": "https://github.com/rugk/website-dark-mode-switcher/pull/59",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 69
+  },
+  {
+   "repo": "pixiebrix/webext-messenger",
+   "org": "pixiebrix",
+   "title": "fix(deps): resolve 9 security vulnerabilities",
+   "url": "https://github.com/pixiebrix/webext-messenger/pull/392",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 19
+  },
+  {
+   "repo": "mozilla/addons-linter",
+   "org": "mozilla",
+   "title": "fix: update outdated MDN documentation link",
+   "url": "https://github.com/mozilla/addons-linter/pull/5956",
+   "date": "2026-03-03",
+   "cat": "docs",
+   "stars": 363
+  },
+  {
+   "repo": "microlinkhq/keyvhq",
+   "org": "microlinkhq",
+   "title": "feat(types): add TypeScript type definitions to compress, offline, and sql packages",
+   "url": "https://github.com/microlinkhq/keyvhq/pull/242",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 446
+  },
+  {
+   "repo": "microlinkhq/html-get",
+   "org": "microlinkhq",
+   "title": "feat: add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/html-get/pull/239",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 102
+  },
+  {
+   "repo": "microlinkhq/browserless",
+   "org": "microlinkhq",
+   "title": "feat: add TypeScript type definitions",
+   "url": "https://github.com/microlinkhq/browserless/pull/702",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 1839
+  },
+  {
+   "repo": "fregante/Awesome-WebExtensions",
+   "org": "fregante",
+   "title": "fix: Update outdated MDN documentation links",
+   "url": "https://github.com/fregante/Awesome-WebExtensions/pull/105",
+   "date": "2026-03-03",
+   "cat": "docs",
+   "stars": 1515
+  },
+  {
+   "repo": "extesy/hoverzoom",
+   "org": "extesy",
+   "title": "docs: update Chrome Web Store URLs to new format",
+   "url": "https://github.com/extesy/hoverzoom/pull/1749",
+   "date": "2026-03-03",
+   "cat": "docs",
+   "stars": 2061
+  },
+  {
+   "repo": "extension-js/extension.js",
+   "org": "extension-js",
+   "title": "fix(deps): resolve 2 security vulnerabilities",
+   "url": "https://github.com/extension-js/extension.js/pull/414",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 5175
+  },
+  {
+   "repo": "chibat/chrome-extension-typescript-starter",
+   "org": "chibat",
+   "title": "fix(deps): resolve 3 security vulnerabilities",
+   "url": "https://github.com/chibat/chrome-extension-typescript-starter/pull/80",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 2820
+  },
+  {
+   "repo": "antfu-collective/vitesse-webext",
+   "org": "antfu-collective",
+   "title": "docs: fix outdated repository links after org migrations",
+   "url": "https://github.com/antfu-collective/vitesse-webext/pull/211",
+   "date": "2026-03-03",
+   "cat": "docs",
+   "stars": 3379
+  },
+  {
+   "repo": "RickyMarou/jest-webextension-mock",
+   "org": "RickyMarou",
+   "title": "fix: update deprecated rollup plugins to official @rollup equivalents",
+   "url": "https://github.com/RickyMarou/jest-webextension-mock/pull/25",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 9
+  },
+  {
+   "repo": "KartikTalwar/gmail.js",
+   "org": "KartikTalwar",
+   "title": "fix(deps): resolve 5 security vulnerabilities via npm audit fix",
+   "url": "https://github.com/KartikTalwar/gmail.js/pull/829",
+   "date": "2026-03-03",
+   "cat": "code",
+   "stars": 3847
+  },
+  {
+   "repo": "KartikTalwar/gmail.js",
+   "org": "KartikTalwar",
+   "title": "docs: fix dead and outdated links in README",
+   "url": "https://github.com/KartikTalwar/gmail.js/pull/825",
+   "date": "2026-03-03",
+   "cat": "docs",
+   "stars": 3847
+  },
+  {
+   "repo": "DIYgod/RSSHub-Radar",
+   "org": "DIYgod",
+   "title": "docs: update 8 Chrome Web Store URLs to new format",
+   "url": "https://github.com/DIYgod/RSSHub-Radar/pull/1179",
+   "date": "2026-03-03",
+   "cat": "docs",
+   "stars": 7353
+  },
+  {
+   "repo": "autonomys/space-acres",
+   "org": "autonomys",
+   "title": "Add macOS packaging",
+   "url": "https://github.com/autonomys/space-acres/pull/210",
+   "date": "2024-07-05",
+   "cat": "code",
+   "stars": 65
+  }
+ ]
+}
