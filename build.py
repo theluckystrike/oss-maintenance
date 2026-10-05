@@ -27,7 +27,7 @@ OUT = Path(__file__).resolve().parent / "docs" / "index.html"
 #   pilot  = $400 one-time pilot month
 #   upkeep = $750 a month locale upkeep (Stripe subscription link)
 # ======================================================================
-PAYMENT_LINKS = {"audit": "https://buy.stripe.com/eVq14o7Iu0tigstaYZ43S0D", "pilot": "https://buy.stripe.com/7sY28sd2Ogsggstd7743S0E", "upkeep": "https://buy.stripe.com/7sYdRa8My8ZO2BD3wx43S0F"}
+PAYMENT_LINKS = {"audit": "https://buy.stripe.com/eVq14o7Iu0tigstaYZ43S0D", "pilot": "https://buy.stripe.com/7sY28sd2Ogsggstd7743S0E", "upkeep": "https://buy.stripe.com/7sYdRa8My8ZO2BD3wx43S0F", "maintenance": "https://buy.stripe.com/00w14o2oa5NC3FHc3343S0G"}
 
 REPO_URL = "https://github.com/theluckystrike/oss-maintenance"
 FORMS = {
@@ -35,7 +35,8 @@ FORMS = {
     "pilot": REPO_URL + "/issues/new?template=pilot-or-upkeep.yml",
 }
 PAY_LABELS = {"audit": "Pay now, audit $400", "pilot": "Pay now, pilot $400",
-              "upkeep": "Pay now, upkeep $750 a month"}
+              "upkeep": "Pay now, upkeep $750 a month",
+              "maintenance": "Pay now, maintenance $1,500 a month"}
 
 START_CSS = """
 .btns { display: flex; flex-wrap: wrap; gap: 10px; margin: 4px 0 14px; }
@@ -57,8 +58,8 @@ def start_block(first, mail_href, h=2):
         return html.escape(str(x), quote=True)
     offers = {
         "audit": ("i18n audit and fix, $400 fixed", "Start now: i18n audit", ["audit"]),
-        "pilot": ("Pilot month $400, or locale upkeep $750 a month", "Start now: pilot or upkeep",
-                  ["pilot", "upkeep"]),
+        "pilot": ("Pilot month $400, locale upkeep $750 a month, or maintenance $1,500 a month", "Start now: pilot or upkeep",
+                  ["pilot", "upkeep", "maintenance"]),
     }
     order = [first] + [k for k in offers if k != first]
     rows = []
