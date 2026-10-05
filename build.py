@@ -68,13 +68,16 @@ def start_block(first, mail_href, h=2):
         btns += [f'<a class="btn pay" href="{esc(PAYMENT_LINKS[p])}">{esc(PAY_LABELS[p])}</a>'
                  for p in pays if PAYMENT_LINKS.get(p, "").startswith("https://")]
         rows.append(f'<p class="row">{esc(label)}</p><div class="btns">{"".join(btns)}</div>')
+    paying = any(v.startswith("https://") for v in PAYMENT_LINKS.values())
+    pay_note = ("<p>Pay now opens a Stripe checkout. The seller name shown there is BeLikeNative, "
+                "the name of my Stripe account.</p>\n") if paying else ""
     return f"""<h{h} id="start">Start now</h{h}>
 <div class="start">
 {"".join(rows)}
-<p>Or email <a href="{esc(mail_href)}">{esc(EMAIL)}</a>. Use email for a private repo or anything you'd rather not post in public, since the form opens a public GitHub issue.</p>
+{pay_note}<p>Or email <a href="{esc(mail_href)}">{esc(EMAIL)}</a>. Use email for a private repo or anything you'd rather not post in public, since the form opens a public GitHub issue.</p>
 <p class="row">What happens next</p>
 <ol>
-<li>I reply in writing within 24 hours with the scope and a payment link.</li>
+<li>I reply in writing within 24 hours to confirm the scope. If you have not paid yet, the reply has the payment link.</li>
 <li>Work starts when the payment arrives.</li>
 <li>You get the written report and the first PR within 3 business days.</li>
 </ol>
