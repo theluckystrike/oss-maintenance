@@ -27,7 +27,7 @@ OUT = Path(__file__).resolve().parent / "docs" / "index.html"
 #   pilot  = $400 one-time pilot month
 #   upkeep = $750 a month locale upkeep (Stripe subscription link)
 # ======================================================================
-PAYMENT_LINKS = {"audit": "", "pilot": "", "upkeep": ""}
+PAYMENT_LINKS = {"audit": "https://buy.stripe.com/eVq14o7Iu0tigstaYZ43S0D", "pilot": "https://buy.stripe.com/7sY28sd2Ogsggstd7743S0E", "upkeep": "https://buy.stripe.com/7sYdRa8My8ZO2BD3wx43S0F"}
 
 REPO_URL = "https://github.com/theluckystrike/oss-maintenance"
 FORMS = {
