@@ -78,6 +78,6 @@ python3 build.py
 
 ## Work with me
 
-Send a written brief at [axdale.com](https://www.axdale.com). Share as much context as you can, such as the repo, the failure, the logs and the deadline. I work async, in writing. My rate is USD 175 to 275 per hour, set by scope.
+Send your project at [axdale.com](https://www.axdale.com/start/?src=gh). Share as much context as you can, such as the repo, the scope, the files and the deadline. I work async, in writing. The written plan is free, the first milestone is paid only if you accept it, and the rate is USD 65 per hour.
 
 Michael
